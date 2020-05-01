@@ -6,7 +6,7 @@ navigator.getUserMedia = ( navigator.getUserMedia ||
 
 Promise.all([
   faceapi.nets.tinyFaceDetector.loadFromUri('/models'),
-  faceapi.nets.faceLandmark68Net.loadFromUri('/models'),
+  faceapi.nets.faceLandmark68Net.loadFromUri('/models/face_landmark_68_model-weights_manifest.json'),
   faceapi.nets.faceRecognitionNet.loadFromUri('/models'),
   faceapi.nets.faceExpressionNet.loadFromUri('/models')
 ]).then(startVideo)
